@@ -20,7 +20,7 @@ func main() {
 	indexUser := 1
 	fmt.Println("Running app")
 	// Tomar archivos de la carpeta template
-	router.LoadHTMLGlob("templates/*")
+	router.LoadHTMLGlob("cmd/templates/index.html")
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
